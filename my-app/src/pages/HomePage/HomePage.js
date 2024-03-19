@@ -4,9 +4,10 @@ import "./HomePage.scss";
 const HomePage = () => {
 
   return (
-    <main >
-    </main>
+    <div>
+      
+    </div>
   )
 }
 
-export default HomePage;
+export default HomePage; 
