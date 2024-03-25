@@ -3,6 +3,11 @@ import {
     CLOSE_SIDEBAR
 } from "../actions/actions";
 
+// Init state
+export const initialState = {
+    isSidebarOpen: false
+}
+
 const sidebarReducer = (state, action) => {
     switch(action.type) {
         case OPEN_SIDEBAR:
