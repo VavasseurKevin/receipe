@@ -27,4 +27,26 @@
             color: $clr-dark;
         }
     }
+
+    .side-content{
+        .side-nav{
+            margin-top: 4rem;
+            .side-item{
+                padding: 6px 0;
+                border-bottom: 0.5px solid rgba(0, 0, 0, 0.06);
+
+                .side-link{
+                    opacity: 0.9;
+                    transition: $transition;
+                    &:hover{
+                        color: $clr-orange;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 576px){
+        width: 280px;
+    }
 }
