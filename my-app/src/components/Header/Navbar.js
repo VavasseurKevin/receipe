@@ -29,7 +29,7 @@ const Navbar = () => {
                     <div className="brand-and-toggle flex align-center justify-between">
                         <Link to="/" className="navbar-brand fw-3 fs-22 flex align-center">
                             <MdFoodBank size={40}/>
-                            <span className="navbar-brand-text fw-7">Mes Recettes</span>
+                            <span className="navbar-brand-text fw-7">Food Receipe</span>
                         </Link>
                         <div className="navbar-btns flex align-center">
                             <button type="boutton" className="navbar-show-btn text-white" onClick={()=> {console.log('Bouton cliqué'); openSidebar();}}>
