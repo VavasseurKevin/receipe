@@ -17,7 +17,7 @@ import {
  } from "./actions";
 
 // Importation de la variable CATEGORIES_URL depuis le fichier utils/constants.js
-import { CATEGORIES_URL } from "../utils/constants";
+import { CATEGORIES_URL, SEARCH_URL } from "../utils/constants";
 
 // Fonction pour récupérer les catégories depuis l'API
 export const startFetchCategories = async(dispatch) => {
@@ -36,4 +36,13 @@ export const startFetchCategories = async(dispatch) => {
     }
 };
 
+export const startFetchMealsBySearch = async(dispatch,searchTerm) => {
+    try{
+        dispatch({type:FETCH_MEALS_BEGIN});
+        const response = await axios.get(`${SEARCH_URL}${searchTerm}`);
+        dispatch({type:FETCH_MEALS_SUCCESS, payload:response.data.meals});
+    }catch(error){
+        dispatch({type:FETCH_MEALS_ERROR,payload:error.message})
+    }
+}
 

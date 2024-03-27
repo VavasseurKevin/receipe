@@ -14,4 +14,35 @@
     @media screen and (min-width: 992px){
         grid-template-columns: repeat(5, 1fr);
     }
+
+    .meal-itm{
+        box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 8px 0px;
+    
+    &-img{
+        position: relative;
+        border-radius: 4px 4px 0 0;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &-cat{
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        padding: 0 18px;
+        border-radius: 16px;
+        font-size: 13px;
+        background-color: $clr-white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    &-body{
+        border-radius: 0 0 4px 4px;
+        &-info{
+            padding: 6px 6px 6px 12px;
+            .area{
+                opacity: 0.6;
+            }
+        }
+    }
+}
 }
