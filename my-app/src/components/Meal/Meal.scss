@@ -23,6 +23,16 @@
         border-radius: 4px 4px 0 0;
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        
+
+        &:hover{
+            img{
+                transform: scale(2);
+                transition: $transition;
+        
+               
+            }
+        }
     }
     &-cat{
         position: absolute;
