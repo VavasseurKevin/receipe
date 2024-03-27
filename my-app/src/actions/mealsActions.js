@@ -4,7 +4,16 @@ import axios from "../api/axios";
 import { 
     FETCH_CATEGORY_BEGIN,
     FETCH_CATEGORY_SUCCESS,
-    FETCH_CATEGORY_ERROR
+    FETCH_CATEGORY_ERROR,
+    FETCH_MEALS_BEGIN,
+    FETCH_MEALS_ERROR,
+    FETCH_MEALS_SUCCESS,
+    FETCH_SINGLE_MEAL_BEGIN,
+    FETCH_SINGLE_MEAL_ERROR,
+    FETCH_SINGLE_MEAL_SUCCESS,
+    FETCH_CATEGORY_MEALS_BEGIN,
+    FETCH_CATEGORY_MEALS_ERROR,
+    FETCH_CATEGORY_MEALS_SUCCESS,
  } from "./actions";
 
 // Importation de la variable CATEGORIES_URL depuis le fichier utils/constants.js
@@ -26,3 +35,5 @@ export const startFetchCategories = async(dispatch) => {
         dispatch({type: FETCH_CATEGORY_ERROR, payload: error.message});
     }
 };
+
+
