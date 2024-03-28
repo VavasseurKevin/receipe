@@ -71,11 +71,11 @@ const MealSingle = ({meal}) => {
                     </div>
 
                     <div className="ingredients my-5 py-3">
-                        <h6 className="fs-16 text-white">Ingredients</h6>  
+                        <h6 className="fs-16 text-white px-2">Ingredients</h6>  
                         <ul className="grid">
                             {
                                 meal?.ingredients?.map((ingredient, idx)=>(
-                                    <li key={idx} className="flex align-center">
+                                    <li key={idx} className="flex align-center px-2">
                                         <span className="li-dot">{idx + 1}</span>
                                         <span className="text-capitalize text-white fs-15">{ingredient}</span>
                                     </li>
