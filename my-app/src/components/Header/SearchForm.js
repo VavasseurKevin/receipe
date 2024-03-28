@@ -25,7 +25,6 @@ const SearchForm = () => {
     e.preventDefault();
     navigate("/");
     startFetchMealsBySearch(dispatch, searchTerm);
-
   }
     return (
         <form className='search-form flex align-center' onSubmit={(e) =>handleSearchResult(e)} >
